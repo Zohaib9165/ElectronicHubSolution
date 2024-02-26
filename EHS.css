@@ -1,0 +1,221 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+body{
+    font-family: "Oxygen", sans-serif;
+    /* background-color: blue; */
+}
+.introRow{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#03045e;
+    
+}
+.navBarRow{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0b090a;
+}
+.buttonSet{
+    margin-left: 20px;
+}
+.logoSet{
+    /* width: 100%;
+    height: 200px; */
+    mix-blend-mode:exclusion;
+}
+.sliderImg2{
+    height: 425px;
+}
+
+
+
+.rowOfMobilePage{
+    background-color: #03045e;
+}
+.card-img-top{
+    height: 180px;
+}
+.card{
+    border-radius: 15px;
+    width: 15rem;
+   
+}
+.navbarSet{
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.cardButton:hover{
+    background-color: #0B090A;
+    color: #ffffff;
+}
+.cardButton1{
+    font-weight: 500;
+    font-size: 22px;
+}
+.cardButton1:hover{
+    background-color: #0B090A;
+    color:yellow;
+}
+.imageOfProduct{
+border-radius: 50%;
+height: 480px;
+}
+.imageOfProduct1{
+border-radius: 50%;
+height: 480px;
+}
+.heading{
+    font-weight: 700;
+    color: #06055E;
+    font-family: "Playfair Display", serif;
+}
+.heading1{
+    font-weight: 700;
+    color: #ffff !important;
+    font-family: "Playfair Display", serif;
+}
+.paragraph{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+}
+.laptopServices{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.sildeHeading{
+    font-weight: 700;
+    color:black;
+}
+.padd{
+    padding: 20px 20px 20px 20px;
+
+}
+.aboutUs{
+background-color: #06055E;
+border-radius: 10px;
+}
+.sider{
+    background-color: #0B090A;
+    color: #fff !important;
+    border-radius: 10px;
+}
+.sider1{
+    background-color: #0B090A;
+    color: #fff;
+    border-top-left-radius:  10px;
+    border-bottom-left-radius:  10px;
+}
+.content{
+    color: whitesmoke;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+margin:0;
+}
+
+.text{
+    font-size: 14px;
+    font-size: 200;
+}
+.footer{
+    background-color: #0B090A;
+    color: #fff;
+}
+.padd{
+   padding: 80px 60px 80px 20px;
+}
+.desginF{
+    background-color: #0B090A;
+    color: #fff !important;
+    border-radius: 0px;
+}
+.iconSet{
+    border-radius: 50px;
+    width: 100px;
+    height: 500px;
+    background-color: #fff;
+    color: #0B090A !important;
+}
+.footerdesign:hover{
+color: blue !important;
+font-weight: 600;
+}
+.Headerline{
+    display: flex;
+ align-items: center;
+ color: #fff !important;
+}
+.Order:hover{
+color: blue;
+}
+.now{
+    cursor: pointer;
+}
+/* _____________________________________________________________________________________ */
+
+.loginDiv{
+    background-color: #0B090A;
+    color: #fff;
+    border-radius: 20px;
+  }
+  .loginDiv1{
+    background-color: #06055E;
+    color: #fff;
+    border-radius: 20px;
+  }
+  #Registration{
+    background-color: #0B090A;
+    /* height: 140vh; */
+  }
+  .RegistrationDataTableBody{
+    background-color:#fff !important;
+    height: 1000vh !important;
+  }
+  .padd1 {
+    padding: 20px 30px;
+  }
+  .output {
+    color: red;
+    font-size: 12px;
+    margin-left: 20px;
+  }
+  .fontSet{
+    font-size: 14px;
+    }
+    #LoginAccount{
+        background-color: #06055E;
+        height: 100vh;
+  
+    }
+    
+    .storedData tr th,.storedData tr td{
+        /* background-color: #fff !important; */
+        color: #fff !important;
+        padding: 10px 30px;
+        background-color: #06055E !important;
+  
+      }
+      .order{
+        color: #fff !important;
+      }
+      .heading1{
+        font-weight: 700;
+        color: #ffff !important;
+        font-family: "Playfair Display", serif;
+    }
+    .font{
+      color: #fff !important;
+    }
+    

@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+:root {
+  --bgColor: #212529;
+  --txtColor: #fff;
+  --txtOFPTagColor: #fff;
+  --bgcOfBody: #141625;
+  --bgOfParentDiv: #1f213a;
+  --borderColor: #1f213a;
+  --heading: #fff;
+  --bgOfCard: #1e2139;
+  --inputBg: #252945;
+  --color:#fff:
+  --rowGT: #0C0E16;
+}
+
+body {
+  background-color: var(--bgcOfBody);
+  color: var(--txtColor);
+  font-family: 'LeagueSpartan', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.sideBar {
+  height: 100vh;
+  position: fixed;
+  width: 7%;
+  top: 0;
+  left: 0;
+  background-color: #373b53;
+  color: blue;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.mainComponent {
+  position: absolute;
+  width: 90%;
+  left: 95px;
+  top: 0;
+}
+.userImage {
+  position: absolute;
+  bottom: 10px;
+  /* left: 10px;
+  width: 40px; */
+}
+
+.round {
+  border-radius: 50%;
+}
+.line {
+  color: #fff;
+}
+.buttonHeader {
+  border-radius: 80px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 10px;
+  background-color: #9277ff !important;
+  border: 1px solid #9277ff !important;
+}
+.buttonHeader1 {
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #9277ff !important;
+  border: 1px solid #9277ff !important;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 24px;
+}
+.row1 {
+  background: var(--bgOfParentDiv);
+}
+.enteriesRow {
+  display: flex;
+  align-items: center;
+}
+.enteriesRow2 {
+  display: flex;
+  align-items: center;
+  color: var(--txtOFPTagColor);
+}
+.enteriesRow {
+  display: flex;
+  align-items: center;
+}
+.enteriesRow1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700 !important;
+}
+.enteriesRowLast {
+  font-weight: 700 !important;
+}
+.DataRow {
+  padding: 30px 10px !important;
+  border-radius: 15px !important;
+}
+.DataRow:hover {
+  border: 1px solid #7c5dfa;
+  border-radius: 0px !important;
+}
+.piller {
+  background-color: #69d69f46 !important;
+  padding: 10px 20px 10px 20px;
+  color: #69d69f;
+}
+.pending {
+  background-color: rgba(255, 166, 0, 0.295) !important;
+  padding: 10px 20px 10px 20px;
+  color: orange;
+}
+.draft {
+  background-color: rgba(206, 205, 201, 0.322) !important;
+  padding: 10px 20px 10px 20px;
+  color: var(--color);
+}
+.pillerPaid {
+  background-color: rgba(0, 128, 0, 0.301) !important;
+  padding: 10px 20px 10px 20px;
+  color: green;
+}
+.AddInvoiceDiv {
+  width: 650px;
+  background-color: var(--bgOfCard);
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.bill {
+  font-size: 16px;
+  font-weight: 500;
+  color: #624eb3;
+}
+.labelSet {
+  font-size: 14px;
+  font-weight: 500;
+}
+.labelSet1 {
+  color: var(--heading);
+  font-weight: 500;
+}
+.inputOfAddInvoice {
+  background-color: var(--inputBg);
+  color: var(--txtColor);
+  font-weight: 500;
+  font-size: 18px;
+  border: 1px solid var(--borderColor);
+  padding: 10px;
+}
+.form-control.inputOfAddInvoice:disabled {
+  background-color:var(--inputBg); /* Change the background color */
+  &&::placeholder{
+    color:var(--txtColor)!important;
+  }
+  /* Add any other styles you want to apply */
+}
+.inputOfAddInvoice:focus {
+  background-color: var(--bgOfParentDiv);
+  color: var(--txtColor);
+}
+.addItemRow {
+  display: flex;
+  align-items: center;
+}
+.addProductButton {
+  background-color: #262945 !important;
+  border-radius: 80px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.cancelButton {
+  padding: 10px 20px 10px 20px;
+  background-color: #262945 !important;
+  border: 1px solid #262945 !important;
+  border-radius: 80px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.pdfButton {
+  padding: 10px 20px 10px 20px;
+  background-color: grey !important;
+  border: 1px solid black !important;
+  color: #fff;
+  border-radius: 80px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.pdfButton:hover {
+  padding: 10px 20px 10px 20px;
+  background-color: grey !important;
+  border: 1px solid black !important;
+  color: #000;
+  border-radius: 80px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.Discard {
+  padding: 10px 20px 10px 20px;
+  background-color: #fff !important;
+  border: 1px solid #fff !important;
+  color: grey !important;
+  border-radius: 80px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.deleteButton {
+  padding: 35px 25px;
+  border-radius: 80px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.saveButton {
+  padding: 30px 20px;
+  background-color: #7c5dfa !important;
+  border: 1px solid #7c5dfa !important;
+  border-radius: 80px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.CancelButton {
+  padding: 35px 25px;
+  background-color: #fff !important;
+  border: 1px solid #fff !important;
+  color: grey !important;
+  border-radius: 80px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.CancelButton1 {
+  padding: 35px 25px;
+  background-color: #fff !important;
+  border: 1px solid #fff !important;
+  color: grey !important;
+  border-radius: 80px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.CancelButton:hover:focus {
+  padding: 10px 20px 10px 20px;
+  background-color: #262945 !important;
+  border: 1px solid #262945 !important;
+  border-radius: 80px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.saveButton:hover:focus {
+  padding: 10px 20px 10px 20px;
+  background-color: #7c5dfa !important;
+  border: 1px solid #7c5dfa !important;
+  border-radius: 80px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.FilteredDatatxt:hover{
+  cursor: pointer;
+}
+
+.FilterData {
+  position: relative;
+  left: 580px;
+  bottom: 34px;
+  /* width:60%; */
+  width: 20%;
+  font-size: 16px;
+  background-color: var(--bgOfCard);
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+.heading {
+  font-weight: 600;
+  font-size: 14px;
+}
+.billMainRow {
+  background-color: var(--bgOfParentDiv) !important;
+  border-radius: 15px;
+}
+.padd {
+  padding: 20px 30px;
+}
+.SetFont {
+  font-size: 14px;
+  color: var(--txtOFPTagColor);
+}
+.SetFont1 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.totalRow {
+
+  background-color: var(--rowGT);
+  justify-content: center;
+  color: #fff;
+  padding: 20px 40px !important;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.badge {
+  font-size: 14px !important;
+}
+.output {
+  color: red;
+  font-size: 12px;
+  margin-left: 20px;
+}
+.card {
+  background-color: var(--bgOfCard);
+  color: var(--txtColor);
+  width: 130%;
+  height: 100%;
+  padding: 40px 30px 40px 30px;
+  left: 80px;
+}
+.storedData tr th,.storedData tr td{
+  background-color: var(--inputBg) !important;
+  color: var(--txtColor) !important;
+  padding: 10px 30px;
+}
+.storedData{
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+.table.table-no-border, .table.table-no-border th, .table.table-no-border td {
+  border: none;
+}
+
+
+/* 4th page of ui Client Crud  */
+
+.ClientForm{
+  background-color:var(--bgOfCard);
+  border-radius: 25px;
+}
+.SubmitForm {
+  padding: 30px 20px;
+  background-color: #7c5dfa !important;
+  border: 1px solid #7c5dfa !important;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.backFun{
+  padding-left: 200px;
+  cursor: pointer;
+}
+#newList{
+  background-color: var(--inputBg);
+ 
+}
+.removeBulletList{
+  list-style-type: none;
+  padding: 15px 10px 5px 10px ; /* Remove padding */
+  margin: 0; 
+  background-color:var(--bgcOfBody);
+  
+}
+.ClientListing{
+  border-radius: 25px !important;
+}
+
+
+/* login page ui design */
+.loginDiv{
+  background-color: var(--bgOfCard);
+  border-radius: 25px;
+}
+.para{
+  color: grey;
+  font-weight: 400;
+}
+.password{
+  color: blue;
+}
+.loginButton {
+  background-color: var(--bgcOfBody) !important;
+  border-radius: 10px !important;
+  font-size: 16px;
+  font-weight: 600;
+}
+.fontSet{
+font-size: 14px;
+}
+#LoginAccount{
+  justify-content: center;
+  margin-top: 120px !important;
+}

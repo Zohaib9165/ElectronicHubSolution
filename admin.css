@@ -1,0 +1,53 @@
+.loginDiv{
+  background-color: #0B090A;
+  color: #fff;
+  border-radius: 20px;
+}
+.loginDiv1{
+  background-color: #06055E;
+  color: #fff;
+  border-radius: 20px;
+}
+#Registration{
+  background-color: #0B090A;
+  /* height: 140vh; */
+}
+.RegistrationDataTableBody{
+  background-color:#fff !important;
+  height: 1000vh !important;
+}
+.padd1 {
+  padding: 20px 30px;
+}
+.output {
+  color: red;
+  font-size: 12px;
+  margin-left: 20px;
+}
+.fontSet{
+  font-size: 14px;
+  }
+  #LoginAccount{
+      background-color: #06055E;
+      height: 100vh;
+
+  }
+  
+  .storedData tr th,.storedData tr td{
+      /* background-color: #fff !important; */
+      color: #fff !important;
+      padding: 10px 30px;
+      background-color: #06055E !important;
+
+    }
+    .order{
+      color: #fff !important;
+    }
+    .heading1{
+      font-weight: 700;
+      color: #ffff !important;
+      font-family: "Playfair Display", serif;
+  }
+  .font{
+    color: #fff !important;
+  }

@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Electronic Hub Solution</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./EHS.css">
+</head>
+
+<body>
+  <div id="webSite" class=" p-0 m-0">
+    <div class="container-fluid" id="header">
+      <div class="row  py-2 introRow d-flex">
+        <div class="col-4 mt-2 Headerline heading">
+          <h4>Electronic Hub Solution</h4>
+
+        </div>
+        <div class="col-4 mt-2 Headerline">
+          <span class="float-center mt-1">
+            <i class="fa-solid fa-phone"></i>&nbsp;&nbsp; : (+1 336-862-5426)
+          </span>
+        </div>
+
+        <div class="col-4 Headerline">
+          <div class="justify-content-center mt-4">
+            <i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;
+            : 1302 5 Points Pl, High Point, NC 27260, United States
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-3  navBarRow">
+        <div class="col-1">
+          <div class="logoSet ">
+            <img src="../images/WhatsApp_Image_2023-12-07_at_11.52.37_0f9f2aac-removebg-preview.png"
+              class="img-fluid ms-3 " alt="logo not found">
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-6  text-center mt-4">
+          <div class="mt-1 Headerline">
+            <button type="button" class="btn btn-outline-primary ms-4 navbarSet" onclick="Home()">Home</button>
+            <button type="button" class="btn btn-outline-primary ms-4 navbarSet" onclick="Mobile()">Mobile</button>
+            <button type="button" class="btn btn-outline-primary ms-4 navbarSet" onclick="Products()">Products</button>
+            <button type="button" class="btn btn-outline-primary ms-4 navbarSet" onclick="Contact()">Contact Us</button>
+            <button type="button" class="btn btn-outline-primary ms-4 navbarSet" onclick="About()">About Us</button>
+          </div>
+
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2 mt-1">
+          <div class="mt-4 me-2 Headerline now float-end" onclick="buyNow()">
+            <span class="Order">Order Now</span>
+            <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+              onclick="buyNow()">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.51345 5H1.33325V3H6.15306L7.21972 8.33333H30.5315L27.5012 25H8.51345L4.51345 5ZM7.61972 10.3333L10.1531 23H25.832L28.135 10.3333H7.61972Z"
+                fill="blue"></path>
+              <path
+                d="M11.9999 28C11.9999 28.7364 11.403 29.3333 10.6666 29.3333C9.93021 29.3333 9.33325 28.7364 9.33325 28C9.33325 27.2636 9.93021 26.6667 10.6666 26.6667C11.403 26.6667 11.9999 27.2636 11.9999 28Z"
+                fill="white"></path>
+              <path
+                d="M25.3333 29.3333C26.0696 29.3333 26.6666 28.7364 26.6666 28C26.6666 27.2636 26.0696 26.6667 25.3333 26.6667C24.5969 26.6667 23.9999 27.2636 23.9999 28C23.9999 28.7364 24.5969 29.3333 25.3333 29.3333Z"
+                fill="white"></path>
+            </svg>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row p-0 m-0" id="slider">
+      <div class="col-12 p-0 m-0">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="../images/bnr2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h4 class="sildeHeading">Mobile Repairing</h4>
+                <p>Repair your used mobile with safely.</p>
+              </div>
+            </div>
+            <div class="carousel-item sliderImg2 img-fluid" data-bs-interval="2000">
+              <img src="../images/laptops_1200x.webp" class="d-block  w-100 " alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h4 class="sildeHeading">Laptop Series</h4>
+                <p>Provided the all companies system new and used.</p>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <img src="../images/best-laptop-medium.jpg" class="d-block w-100 img-fluid" alt="..."
+                style="height: 425px;">
+              <div class="carousel-caption d-none d-md-block">
+                <h4 class="sildeHeading">Electronic Accressies</h4>
+                <p>All electronic accressies and appliances purchase here.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+    <!-- mobile page -->
+    <div class="container-fluid mt-5 mb-5" id="mobileView">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center heading">
+            Top Brand Mobile Series
+          </h1>
+          <p class="text-center mb-5">
+            You can also request Doorstep and on-shop purchase.
+          </p>
+
+        </div>
+        <div class="row rowOfMobilePage m-0">
+          <div class="col-3 mt-4 mb-4">
+            <div class="card">
+              <img src="../images/Apple-iPhone-11-PNG-Image.png" class="card-img-top mt-3" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">I-Phone
+
+                </h4>
+
+                <p class="card-text">
+                  iPhone 15 Pro Max: A15 chip, Super Retina XDR, 5G, advanced camera.</p>
+                <b>
+                  <h5>Rs : 275,000 </h5>
+                </b>
+                <div class="text-center">
+                  <button type="button" class="btn btn-outline-primary py-2 px-5" onclick="buyNow()">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mt-4 mb-4">
+            <div class="card">
+              <img src="../images/c5e5b8f5c3b95dfb9f35c0f29989b493294d91b3.jpg" class="card-img-top mt-3" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Samsung 5G
+                </h4>
+                <p class="card-text">
+                  Powerful processor, versatile cameras, 5G capability.</p>
+                <b>
+                  <h5> Rs: 399,999 </h5>
+                </b>
+                <div class="text-center">
+                  <button type="button" class="btn btn-outline-primary py-2 px-5" onclick="buyNow()">Buy Now</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mt-4 mb-4">
+            <div class="card">
+              <img src="../images/7daa6438d2c6031e92392e5f9eb05cc1.png" class="card-img-top mt-3" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Vivo V29e
+                </h4>
+                <p class="card-text">
+                  Vivo V29e: AMOLED display, powerful camera setup, 5G support.</p>
+                <b>
+                  <h5>Rs 109,999</h5>
+                </b>
+                <div class="text-center">
+                  <button type="button" class="btn btn-outline-primary py-2 px-5" onclick="buyNow()">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mt-4 mb-4">
+            <div class="card">
+              <img src="../images/uploaded_97c0905313778a4e5fba6df3786b55b14570d309.jpg" class="card-img-top mt-3"
+                alt="...">
+              <div class="card-body">
+                <h4 class="card-title"> Reno8
+                </h4>
+                <p class="card-text">
+                  OPPO Reno8 pro: AMOLED display, powerful camera setup, 5G support.</p>
+                <b>
+                  <h5>Rs : 199,999</h5>
+                </b>
+                <div class="text-center">
+                  <button type="button" class="btn btn-outline-primary py-2 px-5" onclick="buyNow()">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // container # 3 for products -->
+    <div class="container-fluid mt-5" id="products">
+      <div class="row  p-0 m-0">
+        <div class="col-12">
+          <h1 class="text-center heading">PRODUCTS</h1>
+          <p class="text-center paragraph ">Provide all Electronic products in one platform </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-7 mt-4">
+          <h2 class="ms-5 heading">Laptop :</h2>
+          <p class="ms-5 mt-3 paragraph">
+            All companies laptop and pro books are available.Experience peak performance and sleek design with our range
+            of versatile laptops. From work to play, find your ideal companion. </p>
+          <div>
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Powerful laptops tailored for you.
+            </p>
+          </div>
+          <div>
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Explore options, find your match.
+            </p>
+          </div>
+          <div>
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Unbeatable prices, below market rates.
+            </p>
+          </div>
+          <div class="mb-3">
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Upgrade your laptop models.
+            </p>
+          </div>
+          <div class="btn btn-primary ms-5 mt-3  cardButton1" onclick="buyNow()">Buy Now</div>
+        </div>
+        <div class="col-5">
+          <div>
+            <img src="../images/laptop_or_macbook_1200x.webp" class="img-fluid imageOfProduct" alt="">
+          </div>
+        </div>
+
+      </div>
+      <div class="row mt-5">
+        <div class="col-5">
+          <div>
+            <img src="../images/simerpreet-singh-OOVomt_6wEY-unsplash.jpg" class="img-fluid imageOfProduct1 ms-3"
+              alt="">
+          </div>
+        </div>
+        <div class="col-7 mt-4">
+          <h2 class="ms-5 heading">Mobile :</h2>
+          <p class="ms-5 mt-3 paragraph">
+            Discover a world of smartphones at Electronic Hub Solution. From flagship to budget-friendly options, find
+            the
+            perfect device for your needs. Explore the latest technology.</p>
+          <div>
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;Diverse mobiles, cater to
+              every preference.
+            </p>
+          </div>
+          <div>
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Competitive prices on all top brands.
+            </p>
+          </div>
+          <div>
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Expert advice for personalized mobile solutions.
+            </p>
+          </div>
+          <div class="mb-3">
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Upgrade now for unmatched performance and style.
+            </p>
+          </div>
+          <div class="btn btn-primary ms-5 mt-3  cardButton1" onclick="buyNow()">Buy Now</div>
+        </div>
+
+
+      </div>
+      <div class="row mt-5">
+        <div class="col-7 mt-4">
+          <h2 class="ms-5 heading">Accessories :</h2>
+          <p class="ms-5 mt-3 paragraph">
+            Explore our collection of affordable accessories for laptops and mobiles. Enhance your devices with
+            chargers,
+            cases, and more, all at unbeatable prices. Upgrade your tech experience .</p>
+          <div>
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Top-notch laptop & mobile accessories, elevate your tech experience.
+            </p>
+          </div>
+          <div>
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Explore our collection for quality and affordability.
+            </p>
+          </div>
+          <div>
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Explore our collection for quality and affordability.
+            </p>
+          </div>
+          <div class="mb-3">
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Upgrade your gadgets with Electronic Hub Solution.
+            </p>
+          </div>
+          <div class="btn btn-primary ms-5 mt-3  cardButton1" onclick="buyNow()">Buy Now</div>
+        </div>
+        <div class="col-5">
+          <div>
+            <img src="../images/depositphotos_86785164-stock-photo-computer-peripherals-and-laptop-accessories.jpg"
+              class="img-fluid imageOfProduct" alt="">
+          </div>
+        </div>
+
+      </div>
+      <div class="row mt-5">
+        <div class="col-5">
+          <div>
+            <img src="../images/depositphotos_592110922-stock-photo-set-household-appliances-microwave-oven.jpg"
+              class="img-fluid imageOfProduct1 ms-3" alt="">
+          </div>
+        </div>
+        <div class="col-7 mt-4">
+          <h2 class="ms-5 heading">Electronic Appliances :</h2>
+          <p class="ms-5 mt-3 paragraph">
+            Explore our selection of electronic appliances at affordable prices. Upgrade your home with quality gadgets
+            without compromising your budget. Find the best deals and elevate your living experience .</p>
+          <div>
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;Quality appliances,
+              affordable prices -order now.
+            </p>
+          </div>
+          <div>
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Upgrade your home with top-notch electronics.
+            </p>
+          </div>
+          <div>
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Find unbeatable deals on essential household gadgets.
+            </p>
+          </div>
+          <div class="mb-3">
+            <p class="ms-5 laptopServices"><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;
+              Elevate your living space with us today.
+            </p>
+          </div>
+          <div class="btn btn-primary ms-5 mt-3  cardButton1" onclick="buyNow()">Buy Now</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container of contact us page -->
+    <div class="container-fliud mb-5" id="contact">
+      <div class="row justify-content-center m-0 p-0">
+        <div class="col-11">
+          <div class="row mt-3 mb-5">
+            <div class="col-12 text-center heading mt-5 mb-3">
+              <h1>Customer Support</h1>
+            </div>
+          </div>
+          <div class="row border aboutUs ">
+            <div class="col-8 sider1 padd1">
+              <form action="" id="feed">
+                <div class="row mt-3 mb-3 padd1">
+                  <div class="col-12  heading1">
+                    <h2 class="Request">Request Free Quote</h2>
+
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-6">
+                    <label for="name" class="mb-2">Full Name :</label>
+                    <input type="text" class="form-control py-2" id="FullName" placeholder="John Caley" required>
+                  </div>
+                  <div class="col-6">
+                    <label for="name" class="mb-2">Email :</label>
+                    <input type="email" class="form-control py-2" id="Email" placeholder="john@gmail.com" required>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-6">
+                    <label for="Number" class="mb-2">Phone Number :</label>
+                    <input type="number" class="form-control py-2" id="Number" placeholder="+92-3XZ-YYYYYYY" required>
+                  </div>
+                  <div class="col-6  mt-3">
+                    <p>Preferred Method to Contact :</p>
+                    <input type="radio" id="CheckEmail" name="fav_language" value="Email">
+                    <label for="Email" class="me-5">Email</label>
+                    <input type="radio" id="ChcekText" name="fav_language" value="Text">
+                    <label for="Text" class="me-5">Text Message </label>
+                    <!-- <input type="radio" id="ChcekCall" name="fav_language" value="Call">
+                    <label for="Call">Phone Call</label><br> -->
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-6">
+                    <label for="ModalName" class="mb-2">Device Brand / Modal Name :</label>
+                    <input type="text" class="form-control py-2" id="ModalName" placeholder="Brand / Modal" required>
+                  </div>
+                  <div class="col-6">
+                    <label for="DeviceColor" class="mb-2">Device Color :</label>
+                    <input type="tex" class="form-control py-2" id="DeviceColor" placeholder="Color" required>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <label for="Feedback" class="mb-2">Feedback Message :</label> <br>
+                    <textarea class="form-control" name="Feedback" id="Feedback" rows="3" cols="50"
+                      placeholder="Short description for feedback!"></textarea>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <button type="button" class="btn btn-outline-primary py-2"
+                      onclick="submitFeedBack()">Submit</button>
+                  </div>
+                </div>
+
+
+              </form>
+            </div>
+            <div class="col-4 content  padd">
+              <div class="row mt-3 mb-3">
+                <div class="col-12">
+                  <h2 class="">Venue Info</h2>
+                </div>
+              </div>
+              <div class="row mt-3 mb-3">
+                <div class="col-12 d-flex">
+                  <div class="me-3">
+                    <i class="fa-solid fa-calendar-days  fa-3x"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-3 ">When</h4>
+                    <p class="text">Monday - Friday</p>
+                    <p class="text">8:00 AM to 6:00 PM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3 mb-3">
+                <div class="col-12 d-flex">
+                  <div class="me-3">
+                    <i class="fa-solid fa-map-location-dot fa-3x"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-3 ">Where</h4>
+                    <p class="text">United States</p>
+                    <p class="text">1302 5 Points Pl</p>
+                    <p class="text">NC 27260</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3 mb-3">
+                <div class="col-12 d-flex">
+                  <div class="me-3">
+                    <i class="fa-solid fa-envelope-circle-check fa-3x"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-3 ">Email</h4>
+                    <p class="text">
+                      <a href="mailto:zohaibbhatti624@gmail.com"> zohaibbhatti624@gmail.com </a>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3 mb-3">
+                <div class="col-12 d-flex">
+                  <div class="me-3">
+                    <i class="fa-solid fa-phone-volume fa-3x"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-3 heading1">Phone Number</h4>
+                    <p class="text">
+                      <a href="mailto:(+1 336-862-5426)">(+1 336-862-5426)</a>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container of about us page -->
+    <div class="container-fluid mt-5 mb-5 aboutUsContainer" id="about">
+      <div class="row mt-3 mb-5">
+        <div class="col-12 text-center heading">
+          <h1>Why Choose Us ?</h1>
+        </div>
+      </div>
+      <div class="row   justify-content-center">
+        <div class="col-11">
+          <div class="row border aboutUs padd1">
+            <div class="col-5 sider padd1">
+              <img src="../images/About-us-min.jpg" class="img-fluid mb-3 mt-3" alt="img not found">
+              <h6 class="mb-4 mt-3"> <i class="fa-solid fa-share-from-square me-2"></i>Our Mission</h6>
+              <h6 class="mb-4"><i class="fa-solid fa-share-from-square me-2"></i>Our Vision</h6>
+              <h6 class="mb-4"><i class="fa-solid fa-share-from-square me-2"></i>Customer-Centric Approach</h6>
+              <h6 class="mb-4"><i class="fa-solid fa-share-from-square me-2"></i>Continuous Improvement</h6>
+              <h6 class="mb-4"><i class="fa-solid fa-share-from-square me-2"></i>Transparency and Trust</h6>
+              <h6 class="mb-4"><i class="fa-solid fa-share-from-square me-2"></i>Thank You for Choosing Us</h6>
+            </div>
+            <div class="col-7 content padd1">
+              <h4 class="heading1 text-center">Electronic Hub Solution
+              </h4>
+              <h6 class="mb-3 mt-3">Our Mission :</h6>
+              <p>Our mission is to become the go-to destination for electronic enthusiasts, offering a wide range of
+                cutting-edge products and exceptional customer service.</p>
+
+              <h6 class="mb-3 mt-3">Our Vision :</h6>
+              <p>We envision a future where everyone can access the latest technology and innovations affordably and
+                conveniently.</p>
+
+              <h6 class="mb-3 mt-3">Customer-Centric Approach :</h6>
+              <p>With a focus on customer satisfaction, we strive to exceed expectations by offering personalized
+                service
+                and support at every step of the customer journey.</p>
+
+              <h6 class="mb-3 mt-3">Thank You for Choosing Us :</h6>
+              <p>We are grateful for the opportunity to serve you and look forward to being your trusted partner for
+                all
+                your electronic needs.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+
+    <footer id="footer">
+      <div class="card-group p-0 m-0">
+        <div class="card desginF">
+          <div class="card-body padd">
+            <div class="text-center">
+              <img src="../images/WhatsApp_Image_2023-12-07_at_11.52.37_0f9f2aac-removebg-preview.png"
+                class="img-fluid footerLogoSet mt-4" width="100" alt="logo not found">
+              <h6 class="mt-5 footerText footerdesign heading desginF">Your Electronic devices partner.</h6>
+            </div>
+          </div>
+
+        </div>
+        <div class="card padd desginF">
+          <div class="card-body">
+            <h2 class="card-title footerdesign heading desginF ">Contact Info</h2>
+            <b>
+              <p class="card-text mt-4 footerdesign">Electronic Hub Solution</p>
+            </b>
+            <p class="card-text mt-2 footerdesign"><b>Phone # : </b> (+1 336-862-5426)</p>
+            <p class="card-text mt-2 footerdesign">
+              <a href="mailto:zohaibbhatti624@gmail.com">
+                <b>Email Us: </b>zohaibbhatti624@gmail.com
+            </p></a>
+            <p class="card-text mt-2 footerdesign"> <b>Address:</b> 1302 5 Points Pl, High Point, NC 27260, United
+              States
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="card padd desginF">
+          <div class="card-body">
+            <h2 class="card-title mb-4 footerdesign heading desginF">
+              Policies</h2>
+            <ul>
+              <li>
+                <p class="card-text mt-2 footerdesign"><b>Terms to use</b></p>
+              </li>
+              <li>
+                <p class="card-text mt-2 footerdesign"><b>Privacy Policy</b></p>
+              </li>
+              <li>
+                <p class="card-text mt-2 footerdesign"> <b>Refund & Return Policy</b></p>
+              </li>
+              <li>
+                <p class="card-text mt-2 footerdesign"> <b>Compliance</b></p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="card desginF padd">
+          <div class="card-body">
+            <h2 class="card-title  mb-4 footerdesign heading desginF">Social Media</h2>
+            <b>
+              <!-- <span class="card-text mt-4 iconSet"> -->
+              <a href="https://www.facebook.com/people/Electronic-Hub-Solution/61556584377975/?mibextid=ZbWKwL">
+                <i class="fa-brands fa-twitter fa-2x ms-2"></i> </a>
+            </b>
+            <b>
+              <a href="https://www.facebook.com/people/Electronic-Hub-Solution/61556584377975/?mibextid=ZbWKwL">
+                <i class="fa-brands fa-facebook fa-2x ms-2"></i> </a></b>
+            <b>
+              <a href="https://www.facebook.com/people/Electronic-Hub-Solution/61556584377975/?mibextid=ZbWKwL">
+                <i class="fa-brands fa-linkedin fa-2x ms-2"></i> </a></b>
+            <b>
+              <a href="https://www.facebook.com/people/Electronic-Hub-Solution/61556584377975/?mibextid=ZbWKwL">
+                <i class="fa-brands fa-youtube fa-2x ms-2"></i> </a></b>
+          </div>
+
+        </div>
+      </div>
+      <div class="row mt-0 mb-0 footer ps-5 pe-5 py-5 end m-0">
+        <div class="col-12 footerdesign">
+          Copyright © 2024 Electronic Hub Solution | All rights reserved.
+          <span class="float-end footerdesign">Powered by Fahad Tech Solution</span>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <!--Functionality_________________________________________________________________________________ -->
+  <!-- Order Now -->
+  <div class="container-fluid mb-0 py-4 d-none" id="Registration">
+
+    <form action="" id="RegistrationForm">
+      <div class="row justify-content-center">
+        <div class="col-6  mt-3 loginDiv1 padd1 mt-5 mb-5">
+          <div class="row ">
+            <div class="col-12 text-center">
+              <h2 class="heading1">Order Now</h2>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-6">
+              <label for="FirstName" class="mb-2 mt-2">First Name</label><span id="OutputName" class="output"></span>
+              <input type="text" id="RegFirstName" class="form-control inputOfAddInvoice" required>
+            </div>
+            <div class="col-6">
+              <label for="LastName" class="mb-2 mt-2">Last Name</label><span id="OutputLastName" class="output"></span>
+              <input type="text" id="RegLastName" class="form-control inputOfAddInvoice" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-6">
+              <label for="Number" class="mb-2 mt-2">Phone Number</label><span id="Number" class="output"></span>
+              <input type="number" id="RegNumber" class="form-control inputOfAddInvoice" required>
+            </div>
+            <div class="col-6">
+              <label for="Email" class="mb-2 mt-2"> Your Email</label><span id="outputMail" class="output"></span>
+              <input type="email" id="RegYourEmail" class="form-control inputOfAddInvoice" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group"><label for="ProductList" class="mb-2 mt-2">Product List: </label> <br>
+                <select id="ProductList" class="form-control1 w-100 py-2" name="ProductList">
+
+                  <optgroup label="Mobiles">
+                    <option value="iPhone 15">iPhone 15</option>
+                    <option value="Vivo V29e">Vivo V29e</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="iPhone 15">iPhone 15</option>
+                  </optgroup>
+                  <optgroup label="Laptops">
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="Hp">Hp</option>
+                    <option value="Dell">Dell</option>
+                  </optgroup>
+                  <optgroup label="Accessories">
+                    <option value="Earbuds">Earbuds </option>
+                    <option value="Charges"> Charges</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Keyboard">Keyboard</option>
+                  </optgroup>
+                  <optgroup label="Home Appliances">
+                    <option value="Microwave Oven">Microwave Oven</option>
+                    <option value="Led">Led</option>
+                    <option value="Refrigerators">Refrigerators</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="col-6">
+              <label for="RegProductQty" class="mb-2 mt-2">ProductQty </label><span id="ProductQty"
+                class="output"></span>
+              <input type="number" id="RegProductQty" class="form-control inputOfAddInvoice" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="RegProductColor" class="mb-2 mt-2">Product Color </label><span id="ProductColor"
+                class="output"></span>
+              <input type="text" id="RegProductColor" class="form-control inputOfAddInvoice" required>
+            </div>
+            <div class="col-6">
+              <label for="Address" class="mb-2 mt-2"> Address</label><span id="outputAddress" class="output"></span>
+              <input type="text" id="RegAddress" class="form-control inputOfAddInvoice" required>
+            </div>
+          </div>
+
+
+          <div class="row justify-content-center">
+            <div class="col-12 ">
+              <p class="float-end">
+                <button type="button" class="btn btn-outline-light mt-4 navbarSet" onclick="submitOrder()">Submit
+                </button>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </form>
+    <!-- Order Now show in table -->
+
+    <div class="container d-none justify-content-center mt-5" id="table">
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>
+            Order's
+
+          </h2>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover mt-3 storedData" id="RegistrationDataTable">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Number</th>
+              <th scope="col">P_Name</th>
+              <th scope="col">Color</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Address</th>
+              <th scope="col" colspan="2">Operations</th>
+
+            </tr>
+          </thead>
+
+          <tbody id="RegistrationDataTableBody">
+            <tr>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- login page -->
+  <div class="container-fluid justify-content-center d-none py-5 d-none" id="LoginAccount">
+    <div class="row justify-content-center">
+      <div class="col-4  mt-3 loginDiv p-5">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h5>Admin Login</h5>
+            <p class="para">Sign in with your username and password</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <label for="Email" class="mb-2"> Your Email</label><span id="outputMail" class="output"></span>
+            <input type="email" id="YourEmail" class="form-control inputOfAddInvoice" required>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 mt-3 mb-3">
+            <label for="password" class="mb-2 mt-3"> Your Password</label><span id="outputPassword"
+              class="output"></span>
+            <input type="password" id="password" class="form-control inputOfAddInvoice" required>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="btn btn-outline-primary mt-4 navbarSet" onclick="login()">Login</div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-1">
+          <div class="col-12 text-center">
+            <p class="text-center fontSet output" id="member"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="./EHS.js"></script>
+  <script src="https://kit.fontawesome.com/c8db8d261b.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

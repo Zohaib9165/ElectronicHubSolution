@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Admin Portal</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./admin.css">
+</head>
+
+<body>
+ <!-- Order Now -->
+ <div class="container-fluid mb-0 py-4 d-none" id="Registration">
+  <div class="row">
+    <div class="col-12  text-center ms-4">
+      <img src="../images/WhatsApp_Image_2023-12-07_at_11.52.37_0f9f2aac-removebg-preview.png"
+      class="img-fluid footerLogoSet mt-4" width="100" alt="logo not found" onclick="back()">
+    </div>
+    
+  </div>
+
+  <form action="" id="RegistrationForm" class="">
+    <div class="row justify-content-center">
+      <div class="col-6  mt-3 loginDiv1 padd1 mt-5 mb-5">
+        <div class="row ">
+          <div class="col-12 text-center">
+            <h2 class="heading1">Order Now</h2>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+            <label for="FirstName" class="mb-2 mt-2">First Name</label><span id="OutputName" class="output"></span>
+            <input type="text" id="RegFirstName" class="form-control inputOfAddInvoice" required>
+          </div>
+          <div class="col-6">
+            <label for="LastName" class="mb-2 mt-2">Last Name</label><span id="OutputLastName" class="output"></span>
+            <input type="text" id="RegLastName" class="form-control inputOfAddInvoice" required>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+            <label for="Number" class="mb-2 mt-2">Phone Number</label><span id="Number" class="output"></span>
+            <input type="number" id="RegNumber" class="form-control inputOfAddInvoice" required>
+          </div>
+          <div class="col-6">
+            <label for="Email" class="mb-2 mt-2"> Your Email</label><span id="outputMail" class="output"></span>
+            <input type="email" id="RegYourEmail" class="form-control inputOfAddInvoice" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group"><label for="ProductList" class="mb-2 mt-2">Product List: </label> <br>
+              <select id="ProductList" class="form-control1 w-100 py-2" name="ProductList">
+
+                <optgroup label="Mobiles">
+                  <option value="iPhone 15">iPhone 15</option>
+                  <option value="Vivo V29e">Vivo V29e</option>
+                  <option value="Samsung">Samsung</option>
+                  <option value="iPhone 15">iPhone 15</option>
+                </optgroup>
+                <optgroup label="Laptops">
+                  <option value="Lenovo">Lenovo</option>
+                  <option value="Hp">Hp</option>
+                  <option value="Dell">Dell</option>
+                </optgroup>
+                <optgroup label="Accessories">
+                  <option value="Earbuds">Earbuds </option>
+                  <option value="Charges"> Charges</option>
+                  <option value="Mouse">Mouse</option>
+                  <option value="Keyboard">Keyboard</option>
+                </optgroup>
+                <optgroup label="Home Appliances">
+                  <option value="Microwave Oven">Microwave Oven</option>
+                  <option value="Led">Led</option>
+                  <option value="Refrigerators">Refrigerators</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="RegProductQty" class="mb-2 mt-2">ProductQty </label><span id="ProductQty"
+              class="output"></span>
+            <input type="number" id="RegProductQty" class="form-control inputOfAddInvoice" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <label for="RegProductColor" class="mb-2 mt-2">Product Color </label><span id="ProductColor"
+              class="output"></span>
+            <input type="text" id="RegProductColor" class="form-control inputOfAddInvoice" required>
+          </div>
+          <div class="col-6">
+            <label for="Address" class="mb-2 mt-2"> Address</label><span id="outputAddress" class="output"></span>
+            <input type="text" id="RegAddress" class="form-control inputOfAddInvoice" required>
+          </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+          <div class="col-12 ">
+            <p class="float-end">
+              <button type="button" class="btn btn-outline-light mt-4 navbarSet" onclick="submitOrder()">Submit
+              </button>
+            </p>
+          </div>
+        </div>
+
+      </div>
+     
+    </div>
+  </form>
+  <!-- Order Now show in table -->
+
+  <div class="container d-none justify-content-center mt-5" id="table">
+   
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="order">
+          Order's
+
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover mt-3 storedData" id="RegistrationDataTable">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Number</th>
+            <th scope="col">P_Name</th>
+            <th scope="col">Color</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Address</th>
+            <th scope="col" colspan="2">Operations</th>
+
+          </tr>
+        </thead>
+
+        <tbody id="RegistrationDataTableBody">
+          <tr>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<!-- login page -->
+<div class="container-fluid justify-content-center py-5" id="LoginAccount">
+  <div class="row justify-content-center">
+    
+   
+    
+  </div>
+  <div class="row justify-content-center">
+      <div class="col-4  mt-3 loginDiv p-5">
+          <div class="row justify-content-center mb-4">
+              <div class="col-6 text-center">
+                <img src="../images/WhatsApp_Image_2023-12-07_at_11.52.37_0f9f2aac-removebg-preview.png"
+                class="img-fluid footerLogoSet mt-4" width="100" alt="logo not found">                  
+              </div>
+              <div class="col-6 mt-5">
+                <h5>Admin Login</h5>
+                  <!-- <p class="para">Sign in with your username and password</p> -->
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-12">
+                  <label for="Email" class="mb-2"> Your Email</label><span id="outputMail" class="output"></span>
+                  <input type="email" id="YourEmail" class="form-control inputOfAddInvoice" required>
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-12 mt-3 mb-3">
+      <label for="password" class="mb-2 mt-3"> Your Password</label><span id="outputPassword"
+        class="output"></span>
+      <input type="password" id="password" class="form-control inputOfAddInvoice" required>
+    </div>
+          </div>
+
+          <div class="row justify-content-center">
+              <div class="col-12">
+                  <div class="btn btn-outline-primary mt-4 navbarSet" onclick="login()">Login</div>
+              </div>
+          </div>
+          <div class="row justify-content-center mt-1">
+              <div class="col-12 text-center">
+                  <p class="text-center fontSet output" id="member"></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./admin.js"></script>
+</body>
+
+</html>
